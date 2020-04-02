@@ -1,0 +1,26 @@
+##端口号
+server:
+  port: 9999
+
+  ##数据库url
+spring:
+  jpa:
+   database-platform: org.hibernate.dialect.MySQL5Dialect
+  datasource:
+   multiDataSource0:
+    url: jdbc:mysql://localhost:3306/mutil_datasource0?serverTimezone=GMT%2B8&characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true&zeroDateTimeBehavior=convertToNull
+  ##数据库用户名
+    username: root
+  ##数据库密码
+    password: root
+  ##数据库驱动
+    driver-class-name: com.mysql.jdbc.Driver
+  ##数据库url
+   multiDataSource1:
+    url: jdbc:mysql://localhost:3306/multi_datasource1?serverTimezone=GMT%2B8&characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true&zeroDateTimeBehavior=convertToNull
+  ##数据库用户名
+    username: root
+  ##数据库密码
+    password: root
+  ##数据库驱动
+    driver-class-name: com.mysql.jdbc.Driver
